@@ -1,4 +1,4 @@
-package chap02.refactoring;
+package chap02.refactoring.parser;
 
 import chap02.refactoring.domain.BankTransaction;
 

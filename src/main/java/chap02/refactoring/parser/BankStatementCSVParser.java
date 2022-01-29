@@ -1,8 +1,9 @@
-package chap02.refactoring;
+package chap02.refactoring.parser;
 
 
 import chap02.refactoring.domain.BankTransaction;
 
+import chap02.refactoring.parser.BankStatementParser;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -11,7 +12,8 @@ import java.util.List;
 /**
  * 2. 형식의 입력 파싱
  */
-public class BankStatementCSVParser implements BankStatementParser {
+public class BankStatementCSVParser implements BankStatementParser
+{
 
     private static final DateTimeFormatter DATE_PATTERN
             = DateTimeFormatter.ofPattern("dd-MM-yyyy");
